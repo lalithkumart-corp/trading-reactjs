@@ -1,0 +1,93 @@
+@import '../../../App.scss';
+
+.orderbook-container {
+    background-color: $componentBackground;
+    color: $primaryTextColor;
+    width: 50%;
+    margin-top: 10px;
+    border: 1px solid grey;
+    .title {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    .symbol {
+        color: grey;
+        font-size: 14px;
+    }
+    .actions-area {
+        .header-icon {
+            padding: 0 5px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+    }
+    .collapsible-div {
+        display: none;
+        min-height: 200px;
+        padding-bottom: 30px;
+        .table-header-row {
+            font-size: 12px;
+        }
+        .table-header {
+            text-align: center;
+            color: grey;
+            padding: 0;
+        }
+        .actions-area {
+            color: grey;
+        }
+        .bg-graph {
+            height: 20px;
+            position: absolute;
+            opacity: 50%;
+        }
+        .a-cell {
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer-col {
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+            .expand-icon {
+                color: #4577ad;
+            }
+            .full-book {
+                border-right: 1px solid grey;
+                padding-right: 5px;
+                font-size: 13px;
+                a {
+                    color: #4577ad;
+                }
+            }
+            .realtime-status {
+                text-decoration: underline;
+                color: grey;
+                font-size: 13px;
+                cursor: pointer;
+                .throttle-signal {
+                    border: 5px solid #1e9875;
+                    border-radius: 100%;
+                    display: inline-block;
+                    background-color: #1e9875;
+                    margin: 0 5px;
+                }
+                .throttle-signal.throttled {
+                    border-color: grey;
+                }
+            }
+        }
+    }
+    .collapsible-div.open {
+        display: flex;
+        height: 100%;
+        transition: height 1s;
+    }
+    .comp-header-bar {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid gray;
+        margin-bottom: 4px;
+        cursor: pointer;
+    }
+}

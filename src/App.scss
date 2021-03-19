@@ -1,0 +1,13 @@
+@import "~bootstrap/scss/bootstrap";
+
+$primaryTextColor: #fff;
+$primaryBackground: #273640;
+$componentBackground: #1b262d;
+
+body {
+    background-color: $primaryBackground;
+    color: $primaryTextColor;
+    .no-padding {
+        padding: 0;
+    }
+}
